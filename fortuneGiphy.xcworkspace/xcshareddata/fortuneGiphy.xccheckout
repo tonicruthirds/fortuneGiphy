@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>016B8350-1E93-4777-87E6-2AC3746434C4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fortuneGiphy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</key>
+		<string>https://github.com/tonicruthirds/Git-Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>fortuneGiphy/fortuneGiphy.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tonicruthirds/Git-Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Git-Assignments</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E116C281AF2FE6D00C2EDC2 /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E116C271AF2FE6D00C2EDC2 /* keywords.txt */; };
+		3E43A3FD1AEDC35E00601C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A3FC1AEDC35E00601C77 /* AppDelegate.swift */; };
+		3E43A4001AEDC35E00601C77 /* fortuneGiphy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A3FE1AEDC35E00601C77 /* fortuneGiphy.xcdatamodeld */; };
+		3E43A4021AEDC35E00601C77 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4011AEDC35E00601C77 /* FirstViewController.swift */; };
+		3E43A4051AEDC35E00601C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4031AEDC35E00601C77 /* Main.storyboard */; };
+		3E43A4071AEDC35E00601C77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4061AEDC35E00601C77 /* Images.xcassets */; };
+		3E43A40A1AEDC35E00601C77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4081AEDC35E00601C77 /* LaunchScreen.xib */; };
+		3E43A4161AEDC35E00601C77 /* fortuneGiphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */; };
+		3E43A4221AEDC6AA00601C77 /* fortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4211AEDC6AA00601C77 /* fortuneView.swift */; };
+		3E43A4241AEDC8B900601C77 /* gif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4231AEDC8B900601C77 /* gif.jpg */; };
+		3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */; };
+		3E43A4281AEDD01000601C77 /* swiperight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4271AEDD01000601C77 /* swiperight.png */; };
+		66AA4ABB4D78E623B3794184 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891013AA6C7768F5B1FD6D56 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E43A4101AEDC35E00601C77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E43A3EF1AEDC35E00601C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E43A3F61AEDC35E00601C77;
+			remoteInfo = fortuneGiphy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E116C271AF2FE6D00C2EDC2 /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		3E43A3F71AEDC35E00601C77 /* fortuneGiphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fortuneGiphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E43A3FB1AEDC35E00601C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E43A3FC1AEDC35E00601C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E43A3FF1AEDC35E00601C77 /* fortuneGiphy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fortuneGiphy.xcdatamodel; sourceTree = "<group>"; };
+		3E43A4011AEDC35E00601C77 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3E43A4041AEDC35E00601C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E43A4061AEDC35E00601C77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3E43A4091AEDC35E00601C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3E43A40F1AEDC35E00601C77 /* fortuneGiphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortuneGiphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E43A4141AEDC35E00601C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneGiphyTests.swift; sourceTree = "<group>"; };
+		3E43A4211AEDC6AA00601C77 /* fortuneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fortuneView.swift; sourceTree = "<group>"; };
+		3E43A4231AEDC8B900601C77 /* gif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gif.jpg; path = ../../../../Creative/gif.jpg; sourceTree = "<group>"; };
+		3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../../../Desktop/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		3E43A4271AEDD01000601C77 /* swiperight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swiperight.png; path = "../../../final-project/swiperight.png"; sourceTree = "<group>"; };
+		891013AA6C7768F5B1FD6D56 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CBCE081FFF18E09DBDCBA5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C366E77778B001924588E213 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E43A3F41AEDC35E00601C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AA4ABB4D78E623B3794184 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E43A40C1AEDC35E00601C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E43A3EE1AEDC35E00601C77 = {
+			isa = PBXGroup;
+			children = (
+				3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */,
+				3E43A3F91AEDC35E00601C77 /* fortuneGiphy */,
+				3E43A4121AEDC35E00601C77 /* fortuneGiphyTests */,
+				3E43A3F81AEDC35E00601C77 /* Products */,
+				B2FEAAD7EB68A6594E981627 /* Pods */,
+				C282D42295837DB10FEE1B97 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E43A3F81AEDC35E00601C77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E43A3F71AEDC35E00601C77 /* fortuneGiphy.app */,
+				3E43A40F1AEDC35E00601C77 /* fortuneGiphyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E43A3F91AEDC35E00601C77 /* fortuneGiphy */ = {
+			isa = PBXGroup;
+			children = (
+				3E43A4271AEDD01000601C77 /* swiperight.png */,
+				3E43A4231AEDC8B900601C77 /* gif.jpg */,
+				3E43A3FC1AEDC35E00601C77 /* AppDelegate.swift */,
+				3E43A4011AEDC35E00601C77 /* FirstViewController.swift */,
+				3E43A4211AEDC6AA00601C77 /* fortuneView.swift */,
+				3E43A4031AEDC35E00601C77 /* Main.storyboard */,
+				3E43A4061AEDC35E00601C77 /* Images.xcassets */,
+				3E43A4081AEDC35E00601C77 /* LaunchScreen.xib */,
+				3E43A3FE1AEDC35E00601C77 /* fortuneGiphy.xcdatamodeld */,
+				3E43A3FA1AEDC35E00601C77 /* Supporting Files */,
+			);
+			path = fortuneGiphy;
+			sourceTree = "<group>";
+		};
+		3E43A3FA1AEDC35E00601C77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E116C271AF2FE6D00C2EDC2 /* keywords.txt */,
+				3E43A3FB1AEDC35E00601C77 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E43A4121AEDC35E00601C77 /* fortuneGiphyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */,
+				3E43A4131AEDC35E00601C77 /* Supporting Files */,
+			);
+			path = fortuneGiphyTests;
+			sourceTree = "<group>";
+		};
+		3E43A4131AEDC35E00601C77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E43A4141AEDC35E00601C77 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2FEAAD7EB68A6594E981627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3CBCE081FFF18E09DBDCBA5 /* Pods.debug.xcconfig */,
+				C366E77778B001924588E213 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C282D42295837DB10FEE1B97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				891013AA6C7768F5B1FD6D56 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E43A3F61AEDC35E00601C77 /* fortuneGiphy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E43A4191AEDC35E00601C77 /* Build configuration list for PBXNativeTarget "fortuneGiphy" */;
+			buildPhases = (
+				BBA1CC911E646493662D15F2 /* Check Pods Manifest.lock */,
+				3E43A3F31AEDC35E00601C77 /* Sources */,
+				3E43A3F41AEDC35E00601C77 /* Frameworks */,
+				3E43A3F51AEDC35E00601C77 /* Resources */,
+				D7085FD0CA43F7977B96FBA0 /* Embed Pods Frameworks */,
+				9A8E143CEF39D2B7D9195211 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fortuneGiphy;
+			productName = fortuneGiphy;
+			productReference = 3E43A3F71AEDC35E00601C77 /* fortuneGiphy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E43A40E1AEDC35E00601C77 /* fortuneGiphyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E43A41C1AEDC35E00601C77 /* Build configuration list for PBXNativeTarget "fortuneGiphyTests" */;
+			buildPhases = (
+				3E43A40B1AEDC35E00601C77 /* Sources */,
+				3E43A40C1AEDC35E00601C77 /* Frameworks */,
+				3E43A40D1AEDC35E00601C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E43A4111AEDC35E00601C77 /* PBXTargetDependency */,
+			);
+			name = fortuneGiphyTests;
+			productName = fortuneGiphyTests;
+			productReference = 3E43A40F1AEDC35E00601C77 /* fortuneGiphyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E43A3EF1AEDC35E00601C77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Cruthirds, Toni";
+				TargetAttributes = {
+					3E43A3F61AEDC35E00601C77 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					3E43A40E1AEDC35E00601C77 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 3E43A3F61AEDC35E00601C77;
+					};
+				};
+			};
+			buildConfigurationList = 3E43A3F21AEDC35E00601C77 /* Build configuration list for PBXProject "fortuneGiphy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E43A3EE1AEDC35E00601C77;
+			productRefGroup = 3E43A3F81AEDC35E00601C77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E43A3F61AEDC35E00601C77 /* fortuneGiphy */,
+				3E43A40E1AEDC35E00601C77 /* fortuneGiphyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E43A3F51AEDC35E00601C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E43A4241AEDC8B900601C77 /* gif.jpg in Resources */,
+				3E43A4281AEDD01000601C77 /* swiperight.png in Resources */,
+				3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */,
+				3E116C281AF2FE6D00C2EDC2 /* keywords.txt in Resources */,
+				3E43A4051AEDC35E00601C77 /* Main.storyboard in Resources */,
+				3E43A40A1AEDC35E00601C77 /* LaunchScreen.xib in Resources */,
+				3E43A4071AEDC35E00601C77 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E43A40D1AEDC35E00601C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A8E143CEF39D2B7D9195211 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA1CC911E646493662D15F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7085FD0CA43F7977B96FBA0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E43A3F31AEDC35E00601C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E43A4021AEDC35E00601C77 /* FirstViewController.swift in Sources */,
+				3E43A3FD1AEDC35E00601C77 /* AppDelegate.swift in Sources */,
+				3E43A4221AEDC6AA00601C77 /* fortuneView.swift in Sources */,
+				3E43A4001AEDC35E00601C77 /* fortuneGiphy.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E43A40B1AEDC35E00601C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E43A4161AEDC35E00601C77 /* fortuneGiphyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E43A4111AEDC35E00601C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E43A3F61AEDC35E00601C77 /* fortuneGiphy */;
+			targetProxy = 3E43A4101AEDC35E00601C77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E43A4031AEDC35E00601C77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E43A4041AEDC35E00601C77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E43A4081AEDC35E00601C77 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E43A4091AEDC35E00601C77 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E43A4171AEDC35E00601C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E43A4181AEDC35E00601C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E43A41A1AEDC35E00601C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CBCE081FFF18E09DBDCBA5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fortuneGiphy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3E43A41B1AEDC35E00601C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C366E77778B001924588E213 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fortuneGiphy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3E43A41D1AEDC35E00601C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fortuneGiphyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fortuneGiphy.app/fortuneGiphy";
+			};
+			name = Debug;
+		};
+		3E43A41E1AEDC35E00601C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fortuneGiphyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fortuneGiphy.app/fortuneGiphy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E43A3F21AEDC35E00601C77 /* Build configuration list for PBXProject "fortuneGiphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E43A4171AEDC35E00601C77 /* Debug */,
+				3E43A4181AEDC35E00601C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E43A4191AEDC35E00601C77 /* Build configuration list for PBXNativeTarget "fortuneGiphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E43A41A1AEDC35E00601C77 /* Debug */,
+				3E43A41B1AEDC35E00601C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E43A41C1AEDC35E00601C77 /* Build configuration list for PBXNativeTarget "fortuneGiphyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E43A41D1AEDC35E00601C77 /* Debug */,
+				3E43A41E1AEDC35E00601C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E43A3FE1AEDC35E00601C77 /* fortuneGiphy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E43A3FF1AEDC35E00601C77 /* fortuneGiphy.xcdatamodel */,
+			);
+			currentVersion = 3E43A3FF1AEDC35E00601C77 /* fortuneGiphy.xcdatamodel */;
+			path = fortuneGiphy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3E43A3EF1AEDC35E00601C77 /* Project object */;
+}

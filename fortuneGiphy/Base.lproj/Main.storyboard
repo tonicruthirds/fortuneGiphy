@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZJD-nc-LuX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Want to see your future?-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="fortuneGiphy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiperight.png" translatesAutoresizingMaskIntoConstraints="NO" id="18r-tR-FcR">
+                                <rect key="frame" x="9" y="118" width="582" height="364"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.38362754119999998" blue="0.21240894769999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="18r-tR-FcR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gf9-XS-q4o"/>
+                            <constraint firstItem="18r-tR-FcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JQk-xP-zkQ"/>
+                            <constraint firstItem="18r-tR-FcR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="Ke8-Hh-4PT"/>
+                            <constraint firstItem="18r-tR-FcR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="N4m-dD-1Dw"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Pu5-kg-LCw" appends="YES" id="mCK-Gc-Fhv"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Want to see your future?" id="MZg-rs-vKt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Pu5-kg-LCw">
+                    <connections>
+                        <segue destination="ICs-Ih-eh8" kind="show" id="Uxi-Pw-dJW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1867" y="327"/>
+        </scene>
+        <!--Fortune View-->
+        <scene sceneID="EiL-Eq-gRv">
+            <objects>
+                <viewController id="ICs-Ih-eh8" customClass="fortuneView" customModule="fortuneGiphy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="II5-G6-uzN"/>
+                        <viewControllerLayoutGuide type="bottom" id="YaQ-97-qRe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zaa-Qg-Qrw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-qi-Py9">
+                                <rect key="frame" x="164" y="434" width="273" height="30"/>
+                                <color key="backgroundColor" red="0.98910984850000006" green="0.98910984850000006" blue="0.98910984850000006" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dYi-bx-yMP"/>
+                                    <constraint firstAttribute="width" constant="273" id="qNn-T7-Ttj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Share Your Fortune with a Friend">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="ICs-Ih-eh8" eventType="touchUpInside" id="JOz-A6-eft"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-vV-d8N">
+                                <rect key="frame" x="0.0" y="38" width="600" height="363"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.38362754119999998" blue="0.21240894769999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CI3-vV-d8N" firstAttribute="leading" secondItem="Zaa-Qg-Qrw" secondAttribute="leading" id="NEW-v7-jJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="CI3-vV-d8N" secondAttribute="trailing" id="NGd-9a-NjO"/>
+                            <constraint firstItem="YaQ-97-qRe" firstAttribute="top" secondItem="FgA-qi-Py9" secondAttribute="bottom" constant="136" id="SM6-1n-eEk"/>
+                            <constraint firstItem="CI3-vV-d8N" firstAttribute="top" secondItem="II5-G6-uzN" secondAttribute="bottom" constant="18" id="Uwp-yx-uAR"/>
+                            <constraint firstItem="FgA-qi-Py9" firstAttribute="centerX" secondItem="CI3-vV-d8N" secondAttribute="centerX" id="gs6-Tb-z77"/>
+                            <constraint firstItem="FgA-qi-Py9" firstAttribute="top" secondItem="CI3-vV-d8N" secondAttribute="bottom" constant="33" id="iF4-bt-0H2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="CI3-vV-d8N" id="oPE-cT-dpI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RxS-zd-div" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2565" y="327"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rR5-lG-tFL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZJD-nc-LuX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ur-PX-Css">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vyb-0e-5pv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZA9-qQ-Ckc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swiperight.png" width="900" height="360"/>
+    </resources>
+</document>
