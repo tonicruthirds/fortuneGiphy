@@ -16,7 +16,6 @@
 		3E43A40A1AEDC35E00601C77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4081AEDC35E00601C77 /* LaunchScreen.xib */; };
 		3E43A4161AEDC35E00601C77 /* fortuneGiphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */; };
 		3E43A4221AEDC6AA00601C77 /* fortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4211AEDC6AA00601C77 /* fortuneView.swift */; };
-		3E43A4241AEDC8B900601C77 /* gif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4231AEDC8B900601C77 /* gif.jpg */; };
 		3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */; };
 		3E43A4281AEDD01000601C77 /* swiperight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4271AEDD01000601C77 /* swiperight.png */; };
 		66AA4ABB4D78E623B3794184 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891013AA6C7768F5B1FD6D56 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -46,7 +45,6 @@
 		3E43A4141AEDC35E00601C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneGiphyTests.swift; sourceTree = "<group>"; };
 		3E43A4211AEDC6AA00601C77 /* fortuneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fortuneView.swift; sourceTree = "<group>"; };
-		3E43A4231AEDC8B900601C77 /* gif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gif.jpg; path = ../../../../Creative/gif.jpg; sourceTree = "<group>"; };
 		3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../../../Desktop/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		3E43A4271AEDD01000601C77 /* swiperight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swiperight.png; path = "../../../final-project/swiperight.png"; sourceTree = "<group>"; };
 		891013AA6C7768F5B1FD6D56 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				3E43A4271AEDD01000601C77 /* swiperight.png */,
-				3E43A4231AEDC8B900601C77 /* gif.jpg */,
 				3E43A3FC1AEDC35E00601C77 /* AppDelegate.swift */,
 				3E43A4011AEDC35E00601C77 /* FirstViewController.swift */,
 				3E43A4211AEDC6AA00601C77 /* fortuneView.swift */,
@@ -237,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E43A4241AEDC8B900601C77 /* gif.jpg in Resources */,
 				3E43A4281AEDD01000601C77 /* swiperight.png in Resources */,
 				3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */,
 				3E116C281AF2FE6D00C2EDC2 /* keywords.txt in Resources */,

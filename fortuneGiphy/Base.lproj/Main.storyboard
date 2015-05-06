@@ -38,7 +38,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Pu5-kg-LCw">
                     <connections>
-                        <segue destination="ICs-Ih-eh8" kind="show" id="Uxi-Pw-dJW"/>
+                        <segue destination="ICs-Ih-eh8" kind="show" identifier="giphyResponse" id="Uxi-Pw-dJW"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

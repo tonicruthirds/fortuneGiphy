@@ -5,6 +5,7 @@ class FirstViewController: UIViewController {
     
     var keywordArray = []
     var giphyFile = String()
+    var giphyURL = ("Unknown")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +33,14 @@ class FirstViewController: UIViewController {
         
         let url = NSURL(string: "http://api.giphy.com/v1/gifs/search?q=\(keyword)&api_key=dc6zaTOxFJmzC&limit=1")
         
+            println("url from giphy request \(url)")
+        
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
            
             let json = JSON(data: data, options: NSJSONReadingOptions.allZeros, error: nil)
             
-            if let imageURL = json["data"]["images"]["fixed_height_small"]["url"].string{
-                println(json)
+            if let giphyURL = json["data"][0]["images"]["fixed_height_small"]["url"].string{
+                println(giphyURL)
             }
           
            
@@ -45,5 +48,13 @@ class FirstViewController: UIViewController {
         task.resume()
 
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "giphyResponse" {
+            var destinationVC = segue.destinationViewController as! FortuneView
+            destinationVC.setGiphyURL(giphyURL)
+        }
+    }
+
 }
 
