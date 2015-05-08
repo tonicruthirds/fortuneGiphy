@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>09A6AD79-70A1-49CE-9462-98F2A5CADFF7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pods</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5CEC142AAC1E6BFB714E6D006D9FC70749661CA0</key>
+		<string>https://github.com/tonicruthirds/fortuneGiphy.git</string>
+		<key>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</key>
+		<string>https://github.com/tonicruthirds/Git-Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pods/Pods.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5CEC142AAC1E6BFB714E6D006D9FC70749661CA0</key>
+		<string>../../..</string>
+		<key>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tonicruthirds/fortuneGiphy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5CEC142AAC1E6BFB714E6D006D9FC70749661CA0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4A3F4BDA6B5528EE23F626DAF6E3696E7E78DE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5CEC142AAC1E6BFB714E6D006D9FC70749661CA0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fortuneGiphy</string>
+		</dict>
+	</array>
+</dict>
+</plist>

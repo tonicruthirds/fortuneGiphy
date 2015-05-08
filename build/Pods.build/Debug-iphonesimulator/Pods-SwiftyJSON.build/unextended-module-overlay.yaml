@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/205316/Documents/Class/Git-Assignments/fortuneGiphy/build/Debug-iphonesimulator/Pods/SwiftyJSON.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/205316/Documents/Class/Git-Assignments/fortuneGiphy/build/Pods.build/Debug-iphonesimulator/Pods-SwiftyJSON.build/unextended-module.modulemap',
+    }]
+  }]
+}

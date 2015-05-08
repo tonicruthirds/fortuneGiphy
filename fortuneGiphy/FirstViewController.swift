@@ -5,7 +5,10 @@ class FirstViewController: UIViewController {
     
     var keywordArray = []
     var giphyFile = String()
-    var giphyURL = ("Unknown")
+    var giphyURL = "Unknown"
+    
+    
+    @IBOutlet weak var cookieOne: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,8 +18,7 @@ class FirstViewController: UIViewController {
         if let dico = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil) {
             keywordArray = dico.componentsSeparatedByString("\n")
             
-            //this makes the contents of my text file an array that I can pull from
-            
+            //this turns the contents of my text file into an array that I can pull from
         }
         
     }
@@ -25,6 +27,10 @@ class FirstViewController: UIViewController {
         super.viewDidAppear(animated)
         
             //making the API call in viewDidAppear so that everytime the user navigates back to the first screen, a new gif is loaded on the second screen
+        
+        fadeInImage()
+       
+       
         
         var randomNumber = Int(arc4random_uniform(268) + 1)
         var keyword = keywordArray[randomNumber]
@@ -41,8 +47,8 @@ class FirstViewController: UIViewController {
             
             if let giphyURL = json["data"][0]["images"]["fixed_height_small"]["url"].string{
                 println(giphyURL)
+                self.giphyURL = giphyURL
             }
-          
            
         })
         task.resume()
@@ -52,9 +58,18 @@ class FirstViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "giphyResponse" {
             var destinationVC = segue.destinationViewController as! FortuneView
-            destinationVC.setGiphyURL(giphyURL)
+            destinationVC.giphyURL = giphyURL
         }
     }
+    
+    func fadeInImage() {
+
+        let animationImages:[AnyObject] = [UIImage(named: "fortune1")!, UIImage(named: "fortune2")!, UIImage(named: "swiperight")!]
+        cookieOne.animationImages = animationImages
+        cookieOne.animationDuration = 2
+        cookieOne.animationRepeatCount = 1
+        cookieOne.startAnimating()
+        
+   }
 
 }
-

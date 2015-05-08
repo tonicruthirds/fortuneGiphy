@@ -4,17 +4,16 @@ class FortuneView: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
 
-    var giphyURL = "Unknown"
+    var giphyURL : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FortuneView().setGiphyURL()
-        imageView.image = UIImage(named: giphyURL)
+        let imageData = NSData(contentsOfURL: NSURL(string: giphyURL)!)
+        
+        imageView.sd_setImageWithURL(NSURL(string: giphyURL)!)
+//
     }
     
-    func setGiphyURL(giphyURL: String) {
-        
-    }
     
     
     override func didReceiveMemoryWarning() {

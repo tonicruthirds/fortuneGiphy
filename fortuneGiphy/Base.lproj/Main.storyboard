@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Want to see your future?-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="fortuneGiphy" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,23 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiperight.png" translatesAutoresizingMaskIntoConstraints="NO" id="18r-tR-FcR">
-                                <rect key="frame" x="9" y="118" width="582" height="364"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-3i-sHo">
+                                <rect key="frame" x="44" y="76" width="512" height="504"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.38362754119999998" blue="0.21240894769999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="18r-tR-FcR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gf9-XS-q4o"/>
-                            <constraint firstItem="18r-tR-FcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JQk-xP-zkQ"/>
-                            <constraint firstItem="18r-tR-FcR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="Ke8-Hh-4PT"/>
-                            <constraint firstItem="18r-tR-FcR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="N4m-dD-1Dw"/>
+                            <constraint firstAttribute="bottom" secondItem="cL9-3i-sHo" secondAttribute="bottom" constant="20" symbolic="YES" id="KHT-wL-S9b"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="PgQ-JB-C3b"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="gsT-vK-LqG"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w16-t8-0w2"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Pu5-kg-LCw" appends="YES" id="mCK-Gc-Fhv"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Want to see your future?" id="MZg-rs-vKt"/>
+                    <navigationItem key="navigationItem" id="MZg-rs-vKt"/>
+                    <connections>
+                        <outlet property="cookieOne" destination="cL9-3i-sHo" id="Bc4-ad-Ucj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Pu5-kg-LCw">
@@ -47,7 +50,7 @@
         <!--Fortune View-->
         <scene sceneID="EiL-Eq-gRv">
             <objects>
-                <viewController id="ICs-Ih-eh8" customClass="fortuneView" customModule="fortuneGiphy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ICs-Ih-eh8" customClass="FortuneView" customModule="fortuneGiphy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="II5-G6-uzN"/>
                         <viewControllerLayoutGuide type="bottom" id="YaQ-97-qRe"/>
@@ -76,7 +79,7 @@
                                     <action selector="shareButtonTapped:" destination="ICs-Ih-eh8" eventType="touchUpInside" id="JOz-A6-eft"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-vV-d8N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-vV-d8N">
                                 <rect key="frame" x="0.0" y="38" width="600" height="363"/>
                             </imageView>
                         </subviews>
@@ -117,7 +120,4 @@
             <point key="canvasLocation" x="1055" y="327"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="swiperight.png" width="900" height="360"/>
-    </resources>
 </document>

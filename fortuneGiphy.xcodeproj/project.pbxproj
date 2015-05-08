@@ -18,6 +18,8 @@
 		3E43A4221AEDC6AA00601C77 /* fortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4211AEDC6AA00601C77 /* fortuneView.swift */; };
 		3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */; };
 		3E43A4281AEDD01000601C77 /* swiperight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4271AEDD01000601C77 /* swiperight.png */; };
+		3EA2881D1AF99F930098971F /* fortune1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA2881B1AF99F930098971F /* fortune1.png */; };
+		3EA288201AF9A09C0098971F /* fortune2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA2881F1AF9A09C0098971F /* fortune2.png */; };
 		66AA4ABB4D78E623B3794184 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891013AA6C7768F5B1FD6D56 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,9 @@
 		3E43A4211AEDC6AA00601C77 /* fortuneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fortuneView.swift; sourceTree = "<group>"; };
 		3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../../../Desktop/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		3E43A4271AEDD01000601C77 /* swiperight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swiperight.png; path = "../../../final-project/swiperight.png"; sourceTree = "<group>"; };
+		3EA2881B1AF99F930098971F /* fortune1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fortune1.png; sourceTree = "<group>"; };
+		3EA2881F1AF9A09C0098971F /* fortune2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fortune2.png; sourceTree = "<group>"; };
+		3EC2B90F1AFC3B350070E8D1 /* fortuneGiphy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fortuneGiphy-Bridging-Header.h"; sourceTree = "<group>"; };
 		891013AA6C7768F5B1FD6D56 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CBCE081FFF18E09DBDCBA5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C366E77778B001924588E213 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +100,8 @@
 		3E43A3F91AEDC35E00601C77 /* fortuneGiphy */ = {
 			isa = PBXGroup;
 			children = (
+				3EA2881B1AF99F930098971F /* fortune1.png */,
+				3EA2881F1AF9A09C0098971F /* fortune2.png */,
 				3E43A4271AEDD01000601C77 /* swiperight.png */,
 				3E43A3FC1AEDC35E00601C77 /* AppDelegate.swift */,
 				3E43A4011AEDC35E00601C77 /* FirstViewController.swift */,
@@ -113,6 +120,7 @@
 			children = (
 				3E116C271AF2FE6D00C2EDC2 /* keywords.txt */,
 				3E43A3FB1AEDC35E00601C77 /* Info.plist */,
+				3EC2B90F1AFC3B350070E8D1 /* fortuneGiphy-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 				TargetAttributes = {
 					3E43A3F61AEDC35E00601C77 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = VA23Q9EH6T;
 					};
 					3E43A40E1AEDC35E00601C77 = {
 						CreatedOnToolsVersion = 6.3;
@@ -236,7 +245,9 @@
 			files = (
 				3E43A4281AEDD01000601C77 /* swiperight.png in Resources */,
 				3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */,
+				3EA2881D1AF99F930098971F /* fortune1.png in Resources */,
 				3E116C281AF2FE6D00C2EDC2 /* keywords.txt in Resources */,
+				3EA288201AF9A09C0098971F /* fortune2.png in Resources */,
 				3E43A4051AEDC35E00601C77 /* Main.storyboard in Resources */,
 				3E43A40A1AEDC35E00601C77 /* LaunchScreen.xib in Resources */,
 				3E43A4071AEDC35E00601C77 /* Images.xcassets in Resources */,
@@ -438,9 +449,13 @@
 			baseConfigurationReference = A3CBCE081FFF18E09DBDCBA5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = fortuneGiphy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fortuneGiphy/fortuneGiphy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -450,9 +465,12 @@
 			baseConfigurationReference = C366E77778B001924588E213 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = fortuneGiphy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fortuneGiphy/fortuneGiphy-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
