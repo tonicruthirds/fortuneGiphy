@@ -14,23 +14,28 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiperight.png" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-3i-sHo">
-                                <rect key="frame" x="44" y="32" width="512" height="548"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiperight.png" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-3i-sHo">
+                                <rect key="frame" x="17" y="-44" width="567" height="580"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Pu5-kg-LCw" appends="YES" id="N8D-U7-uYC"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.38362754119999998" blue="0.21240894769999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="cL9-3i-sHo" secondAttribute="bottom" constant="20" symbolic="YES" id="KHT-wL-S9b"/>
-                            <constraint firstItem="cL9-3i-sHo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="PgQ-JB-C3b"/>
-                            <constraint firstItem="cL9-3i-sHo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="gsT-vK-LqG"/>
-                            <constraint firstItem="cL9-3i-sHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w16-t8-0w2"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N14-Sw-ior"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="kdg-4s-Pvt"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pr0-GK-kfn"/>
+                            <constraint firstItem="cL9-3i-sHo" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="rKs-Zf-nBa"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Pu5-kg-LCw" appends="YES" id="mCK-Gc-Fhv"/>
+                            <outletCollection property="gestureRecognizers" destination="Pu5-kg-LCw" appends="YES" id="Xmf-lu-uBv"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Want to see your future?" id="MZg-rs-vKt"/>
@@ -39,9 +44,15 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Pu5-kg-LCw">
+                <swipeGestureRecognizer direction="left" id="Pu5-kg-LCw">
                     <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="vVq-mM-BY0"/>
                         <segue destination="ICs-Ih-eh8" kind="show" identifier="giphyResponse" id="Uxi-Pw-dJW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="iRY-mX-1li">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="KUH-xA-E8B"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -63,8 +74,8 @@
                                 <rect key="frame" x="164" y="500" width="273" height="30"/>
                                 <color key="backgroundColor" red="0.98910984850000006" green="0.98910984850000006" blue="0.98910984850000006" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="273" id="HvR-K0-CIl"/>
-                                    <constraint firstAttribute="height" constant="30" id="o74-2K-Pss"/>
+                                    <constraint firstAttribute="height" constant="30" id="9T3-Wk-vxO"/>
+                                    <constraint firstAttribute="width" constant="273" id="F1Z-Eg-VpZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Share Your Fortune with a Friend">
@@ -79,29 +90,30 @@
                                     <action selector="shareButtonTapped:" destination="ICs-Ih-eh8" eventType="touchUpInside" id="JOz-A6-eft"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-vV-d8N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-vV-d8N">
                                 <rect key="frame" x="0.0" y="101" width="600" height="362"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjo-xp-YDU">
-                                <rect key="frame" x="185" y="42" width="230" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjo-xp-YDU">
+                                <rect key="frame" x="5" y="42" width="595" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="GV4-aD-8aY"/>
+                                    <constraint firstAttribute="height" constant="22" id="thN-EN-q9s"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.38362754119999998" blue="0.21240894769999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="CI3-vV-d8N" firstAttribute="top" secondItem="Bjo-xp-YDU" secondAttribute="bottom" constant="37" id="DLo-Ud-7Sn"/>
-                            <constraint firstItem="Bjo-xp-YDU" firstAttribute="centerX" secondItem="CI3-vV-d8N" secondAttribute="centerX" id="dGi-Gt-L5j"/>
-                            <constraint firstItem="Bjo-xp-YDU" firstAttribute="top" secondItem="II5-G6-uzN" secondAttribute="bottom" constant="22" id="eAe-vK-rrd"/>
-                            <constraint firstAttribute="trailing" secondItem="CI3-vV-d8N" secondAttribute="trailing" id="lV4-9l-M7L"/>
-                            <constraint firstItem="CI3-vV-d8N" firstAttribute="centerX" secondItem="FgA-qi-Py9" secondAttribute="centerX" id="p4S-cO-X2R"/>
-                            <constraint firstItem="FgA-qi-Py9" firstAttribute="top" secondItem="CI3-vV-d8N" secondAttribute="bottom" constant="37" id="qd2-3A-dQZ"/>
-                            <constraint firstItem="YaQ-97-qRe" firstAttribute="top" secondItem="FgA-qi-Py9" secondAttribute="bottom" constant="70" id="tnp-jQ-1xb"/>
-                            <constraint firstItem="CI3-vV-d8N" firstAttribute="leading" secondItem="Zaa-Qg-Qrw" secondAttribute="leading" id="yC6-Mc-XQu"/>
+                            <constraint firstItem="Bjo-xp-YDU" firstAttribute="leading" secondItem="Zaa-Qg-Qrw" secondAttribute="leadingMargin" constant="-11" id="2Xo-FO-b72"/>
+                            <constraint firstItem="CI3-vV-d8N" firstAttribute="leading" secondItem="Zaa-Qg-Qrw" secondAttribute="leading" id="5ox-jI-hvI"/>
+                            <constraint firstItem="YaQ-97-qRe" firstAttribute="top" secondItem="FgA-qi-Py9" secondAttribute="bottom" constant="70" id="7m5-Qp-HkQ"/>
+                            <constraint firstItem="CI3-vV-d8N" firstAttribute="top" secondItem="Bjo-xp-YDU" secondAttribute="bottom" constant="37" id="DnK-B0-54F"/>
+                            <constraint firstItem="FgA-qi-Py9" firstAttribute="centerX" secondItem="CI3-vV-d8N" secondAttribute="centerX" id="P2i-Iu-fJV"/>
+                            <constraint firstAttribute="trailing" secondItem="CI3-vV-d8N" secondAttribute="trailing" id="Rmh-z5-AsS"/>
+                            <constraint firstItem="CI3-vV-d8N" firstAttribute="trailing" secondItem="Bjo-xp-YDU" secondAttribute="trailing" id="ZgX-F9-8BD"/>
+                            <constraint firstItem="FgA-qi-Py9" firstAttribute="top" secondItem="CI3-vV-d8N" secondAttribute="bottom" constant="37" id="avY-Hb-Bet"/>
+                            <constraint firstItem="Bjo-xp-YDU" firstAttribute="top" secondItem="II5-G6-uzN" secondAttribute="bottom" constant="22" id="cTo-9g-ZfI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -118,9 +130,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mlt-WL-4S2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kPJ-gn-ZyK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="kPJ-gn-ZyK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.38362754119999998" blue="0.21240894769999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -135,4 +151,5 @@
     <resources>
         <image name="swiperight.png" width="1200" height="900"/>
     </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

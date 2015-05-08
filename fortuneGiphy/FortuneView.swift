@@ -7,6 +7,7 @@ class FortuneView: UIViewController {
     @IBOutlet weak var fortuneMessage: UILabel!
     
     var giphyURL : String = ""
+    var keyword : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,9 @@ class FortuneView: UIViewController {
 
     
     @IBAction func shareButtonTapped(sender: AnyObject) {
-            let textToShare = "I'm going to feel keyword today. What about you?"
+            let textToShare = "I'm going to feel \(keyword) today. What about you?"
             let imageToShare = giphyURL
-            let textPromo = "Download fortuneGiphy from the app store to find out!"
+            let textPromo = "Download fortuneGiphy from the App Store to find out!"
             
             if let linkToApp = NSURL(string: "http://itunes.apple.com")
             {
@@ -40,7 +41,7 @@ class FortuneView: UIViewController {
     }
     
     func showMessage() {
-        fortuneMessage.text = "You will feel keyword."
+        fortuneMessage.text = "You will feel \(keyword) today."
     }
     
 }

@@ -6,19 +6,19 @@ class FirstViewController: UIViewController {
     var keywordArray = []
     var giphyFile = String()
     var giphyURL = "Unknown"
-    
+    var keyword = String()
     
     @IBOutlet weak var cookieOne: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+            
         let bundle = NSBundle.mainBundle()
         let path = bundle.pathForResource("keywords", ofType: "txt")
         if let dico = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil) {
             keywordArray = dico.componentsSeparatedByString("\n")
             
-            //this turns the contents of my text file into an array that I can pull from
+                //this turns the contents of my text file into an array
         }
         
     }
@@ -26,19 +26,17 @@ class FirstViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-            //making the API call in viewDidAppear so that everytime the user navigates back to the first screen, a new gif is loaded on the second screen
+                //making the API call in viewDidAppear so that everytime the user navigates back to the first screen, a new gif is loaded on the second screen
         
-        fadeInImage()
-       
-       
+         fadeInImage()
         
-        var randomNumber = Int(arc4random_uniform(267) + 1)
+        var randomNumber = Int(arc4random_uniform(229) + 1)
         var keyword = keywordArray[randomNumber]
+        self.keyword = keyword as! String
         
-            //getting random keyword from the array to pass thru my api call to giphy
+                //getting random keyword from the array to pass thru my api call to giphy
         
         let url = NSURL(string: "http://api.giphy.com/v1/gifs/search?q=\(keyword)&api_key=dc6zaTOxFJmzC&limit=1")
-        
             println("url from giphy request \(url)")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
@@ -56,10 +54,11 @@ class FirstViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "giphyResponse" {
+        if segue.identifier == "giphyResponse"{
             var destinationVC = segue.destinationViewController as! FortuneView
-            destinationVC.giphyURL = giphyURL 
-        
+            destinationVC.giphyURL = giphyURL
+            destinationVC.keyword = keyword
+                //passing the keyword and giphy response to the second VC
         }
     }
     
@@ -70,7 +69,7 @@ class FirstViewController: UIViewController {
         cookieOne.animationDuration = 2
         cookieOne.animationRepeatCount = 1
         cookieOne.startAnimating()
-        
+                //animating the fortune cookie image
    }
     
     func setImage() {
