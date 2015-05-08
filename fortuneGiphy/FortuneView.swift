@@ -4,6 +4,8 @@ class FortuneView: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
 
+    @IBOutlet weak var fortuneMessage: UILabel!
+    
     var giphyURL : String = ""
     
     override func viewDidLoad() {
@@ -11,7 +13,8 @@ class FortuneView: UIViewController {
         let imageData = NSData(contentsOfURL: NSURL(string: giphyURL)!)
         
         imageView.sd_setImageWithURL(NSURL(string: giphyURL)!)
-//
+        
+        showMessage()
     }
     
     
@@ -23,7 +26,7 @@ class FortuneView: UIViewController {
 
     
     @IBAction func shareButtonTapped(sender: AnyObject) {
-            let textToShare = "Look what I have to look forward to today. What's your day looking like?"
+            let textToShare = "I'm going to feel keyword today. What about you?"
             let imageToShare = giphyURL
             let textPromo = "Download fortuneGiphy from the app store to find out!"
             
@@ -34,6 +37,10 @@ class FortuneView: UIViewController {
                 
                 self.presentViewController(activityVC, animated: true, completion: nil)
             }
+    }
+    
+    func showMessage() {
+        fortuneMessage.text = "You will feel keyword."
     }
     
 }

@@ -15,7 +15,7 @@
 		3E43A4071AEDC35E00601C77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4061AEDC35E00601C77 /* Images.xcassets */; };
 		3E43A40A1AEDC35E00601C77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4081AEDC35E00601C77 /* LaunchScreen.xib */; };
 		3E43A4161AEDC35E00601C77 /* fortuneGiphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */; };
-		3E43A4221AEDC6AA00601C77 /* fortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4211AEDC6AA00601C77 /* fortuneView.swift */; };
+		3E43A4221AEDC6AA00601C77 /* FortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43A4211AEDC6AA00601C77 /* FortuneView.swift */; };
 		3E43A4261AEDCD6400601C77 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */; };
 		3E43A4281AEDD01000601C77 /* swiperight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43A4271AEDD01000601C77 /* swiperight.png */; };
 		3EA2881D1AF99F930098971F /* fortune1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA2881B1AF99F930098971F /* fortune1.png */; };
@@ -46,7 +46,7 @@
 		3E43A40F1AEDC35E00601C77 /* fortuneGiphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortuneGiphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E43A4141AEDC35E00601C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E43A4151AEDC35E00601C77 /* fortuneGiphyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneGiphyTests.swift; sourceTree = "<group>"; };
-		3E43A4211AEDC6AA00601C77 /* fortuneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fortuneView.swift; sourceTree = "<group>"; };
+		3E43A4211AEDC6AA00601C77 /* FortuneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortuneView.swift; sourceTree = "<group>"; };
 		3E43A4251AEDCD6400601C77 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../../../Desktop/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		3E43A4271AEDD01000601C77 /* swiperight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swiperight.png; path = "../../../final-project/swiperight.png"; sourceTree = "<group>"; };
 		3EA2881B1AF99F930098971F /* fortune1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fortune1.png; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				3E43A4271AEDD01000601C77 /* swiperight.png */,
 				3E43A3FC1AEDC35E00601C77 /* AppDelegate.swift */,
 				3E43A4011AEDC35E00601C77 /* FirstViewController.swift */,
-				3E43A4211AEDC6AA00601C77 /* fortuneView.swift */,
+				3E43A4211AEDC6AA00601C77 /* FortuneView.swift */,
 				3E43A4031AEDC35E00601C77 /* Main.storyboard */,
 				3E43A4061AEDC35E00601C77 /* Images.xcassets */,
 				3E43A4081AEDC35E00601C77 /* LaunchScreen.xib */,
@@ -318,7 +318,7 @@
 			files = (
 				3E43A4021AEDC35E00601C77 /* FirstViewController.swift in Sources */,
 				3E43A3FD1AEDC35E00601C77 /* AppDelegate.swift in Sources */,
-				3E43A4221AEDC6AA00601C77 /* fortuneView.swift in Sources */,
+				3E43A4221AEDC6AA00601C77 /* FortuneView.swift in Sources */,
 				3E43A4001AEDC35E00601C77 /* fortuneGiphy.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

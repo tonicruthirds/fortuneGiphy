@@ -32,7 +32,7 @@ class FirstViewController: UIViewController {
        
        
         
-        var randomNumber = Int(arc4random_uniform(268) + 1)
+        var randomNumber = Int(arc4random_uniform(267) + 1)
         var keyword = keywordArray[randomNumber]
         
             //getting random keyword from the array to pass thru my api call to giphy
@@ -45,7 +45,7 @@ class FirstViewController: UIViewController {
            
             let json = JSON(data: data, options: NSJSONReadingOptions.allZeros, error: nil)
             
-            if let giphyURL = json["data"][0]["images"]["fixed_height_small"]["url"].string{
+            if let giphyURL = json["data"][0]["images"]["downsized_large"]["url"].string{
                 println(giphyURL)
                 self.giphyURL = giphyURL
             }
@@ -58,7 +58,8 @@ class FirstViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "giphyResponse" {
             var destinationVC = segue.destinationViewController as! FortuneView
-            destinationVC.giphyURL = giphyURL
+            destinationVC.giphyURL = giphyURL 
+        
         }
     }
     
@@ -71,5 +72,9 @@ class FirstViewController: UIViewController {
         cookieOne.startAnimating()
         
    }
+    
+    func setImage() {
+        
+    }
 
 }
