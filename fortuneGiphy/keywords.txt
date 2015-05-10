@@ -172,7 +172,6 @@ queasy
 quiet
 quirky
 rage
-rapture
 rejection
 relief
 relieved

@@ -8,10 +8,11 @@ class FortuneView: UIViewController {
     
     var giphyURL : String = ""
     var keyword : String = ""
+    var imageData : NSData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageData = NSData(contentsOfURL: NSURL(string: giphyURL)!)
+        imageData = NSData(contentsOfURL: NSURL(string: giphyURL)!)
         
         imageView.sd_setImageWithURL(NSURL(string: giphyURL)!)
         
@@ -27,17 +28,18 @@ class FortuneView: UIViewController {
 
     
     @IBAction func shareButtonTapped(sender: AnyObject) {
-            let textToShare = "I'm going to feel \(keyword) today. What about you?"
-            let imageToShare = giphyURL
-            let textPromo = "Download fortuneGiphy from the App Store to find out!"
-            
-            if let linkToApp = NSURL(string: "http://itunes.apple.com")
-            {
-                let objectsToShare = [textToShare, textPromo]
-                let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        let textToShare = "I'm going to feel \(keyword) today. What about you?"
+        let textPromo = "Download fortuneGiphy from the App Store to find out!"
+        
+        
+//            if let linkToApp = NSURL(string: "http://itunes.apple.com")
                 
-                self.presentViewController(activityVC, animated: true, completion: nil)
-            }
+        
+        let objectsToShare : [AnyObject] = [imageData, textToShare, textPromo]
+        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        
+        self.presentViewController(activityVC, animated: true, completion: nil)
+        
     }
     
     func showMessage() {

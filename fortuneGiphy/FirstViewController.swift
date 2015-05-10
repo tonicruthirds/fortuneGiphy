@@ -30,7 +30,7 @@ class FirstViewController: UIViewController {
         
          fadeInImage()
         
-        var randomNumber = Int(arc4random_uniform(229) + 1)
+        var randomNumber = Int(arc4random_uniform(228) + 1)
         var keyword = keywordArray[randomNumber]
         self.keyword = keyword as! String
         

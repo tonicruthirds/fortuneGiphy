@@ -44,15 +44,15 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="iRY-mX-1li">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="KUH-xA-E8B"/>
+                    </connections>
+                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="Pu5-kg-LCw">
                     <connections>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="vVq-mM-BY0"/>
                         <segue destination="ICs-Ih-eh8" kind="show" identifier="giphyResponse" id="Uxi-Pw-dJW"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="iRY-mX-1li">
-                    <connections>
-                        <outlet property="delegate" destination="8bC-Xf-vdC" id="KUH-xA-E8B"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
