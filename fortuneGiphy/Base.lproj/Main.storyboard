@@ -22,6 +22,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Pu5-kg-LCw" appends="YES" id="N8D-U7-uYC"/>
+                                    <outletCollection property="gestureRecognizers" destination="iRY-mX-1li" appends="YES" id="BYX-aE-uXn"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -47,6 +48,7 @@
                 <swipeGestureRecognizer direction="right" id="iRY-mX-1li">
                     <connections>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="KUH-xA-E8B"/>
+                        <segue destination="ICs-Ih-eh8" kind="show" id="y9B-PX-szK"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="Pu5-kg-LCw">
@@ -151,5 +153,8 @@
     <resources>
         <image name="swiperight.png" width="1200" height="900"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uxi-Pw-dJW"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
